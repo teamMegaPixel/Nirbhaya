@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "679208746916",
+    "firebase_url": "https://nirbhaya-d270f.firebaseio.com",
+    "project_id": "nirbhaya-d270f",
+    "storage_bucket": "nirbhaya-d270f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679208746916:android:b2b9e21ce703795e",
+        "android_client_info": {
+          "package_name": "com.android.navada.nirbhaya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "679208746916-ss8hb8biaern2ppl1ll1uk2699b8lng6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.navada.nirbhaya",
+            "certificate_hash": "0b05961972e2dd65d555bf2c9c99b422c41e73f6"
+          }
+        },
+        {
+          "client_id": "679208746916-5qep2tq6cmo9o6s0tjipajqmkn77u5mq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzQi3xro6odQDX9L9VK90mnT21R9pJmZc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "679208746916-5qep2tq6cmo9o6s0tjipajqmkn77u5mq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

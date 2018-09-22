@@ -1,3 +1,40 @@
 <resources>
+
     <string name="app_name">Nirbhaya</string>
+
+    <!--Login Activity -->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="not_a_user">Not a user yet?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+    <!-- Sign Up Activity -->
+
+    <string name="enter_details">Sign Up Form</string>
+    <string name="name">Name</string>
+    <string name="enter_name">Enter full name</string>
+    <string name="email">Email</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="required_password">Password</string>
+    <string name="create_password">Create Password</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="enter_number">Enter your mobile number</string>
+    <string name="submit">SUBMIT</string>
+
+    <!-- Verification Activity -->
+    <string name="timer_text">60:00</string>
+    <string name="verification_code">VERIFICATION CODE</string>
+    <string name="enter_code">Enter verification code</string>
+    <string name="verify">VERIFY</string>
+    <string name="resend">RESEND CODE</string>
+
+    <string name="reset_password">SEND RESET PASSWORD LINK</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="exit">Exit</string>
+
 </resources>
