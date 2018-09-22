@@ -9,6 +9,13 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.Fragment;
+import android.view.MenuItem;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -16,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     private AlertDialog.Builder exitBuilder;
     private FirebaseAuth mAuth;
+    private   Fragment selectedFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +52,33 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
+        BottomNavigationView bottomNav = findViewById(R.id.bottom_nav);
+        bottomNav.setOnNavigationItemSelectedListener(navListener);
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragemnt_container,new AddFragment())
+                .commit();
+
+
+
     }
+
+    private BottomNavigationView.OnNavigationItemSelectedListener navListener =
+            new BottomNavigationView.OnNavigationItemSelectedListener() {
+                @Override
+                public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                    Fragment selectedFragment = new ShowOnMapsFragment();
+                    switch (menuItem.getItemId()){
+                        case R.id.my_contacts:
+                            selectedFragment = new AddFragment();
+                            break;
+                        case R.id.my_location:
+                            selectedFragment = new ShowOnMapsFragment();
+                            break;
+                    }
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragemnt_container,
+                            selectedFragment).commit();
+                    return true;
+                }
+            };
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

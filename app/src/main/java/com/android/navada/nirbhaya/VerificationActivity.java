@@ -184,7 +184,7 @@ public class VerificationActivity extends AppCompatActivity {
 
                     mSharedPreferences.edit().putString("name",userName).apply();
 
-                    User user = new User(userName,userEmail,userMobileNumber);
+                    User user = new User(userName,userEmail,userMobileNumber,0,0);
 
                     mDatabaseReference.child(mAuth.getUid()).setValue(user);
 

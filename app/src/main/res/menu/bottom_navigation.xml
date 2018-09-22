@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/my_contacts"
+        android:title="Contacts"/>
+    <item
+        android:id="@+id/my_location"
+        android:title="Maps"/>
+    <item
+        android:id="@+id/my_panic"
+        android:title="PANIC BUTTON"/>
+</menu>

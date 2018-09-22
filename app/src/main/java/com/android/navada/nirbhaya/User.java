@@ -6,11 +6,14 @@ package com.android.navada.nirbhaya;
 public class User {
 
     private String name,email,phoneNumber;
+    private double latitude,longitude;
 
-    public User(String name, String email, String phoneNumber) {
+    public User(String name, String email, String phoneNumber, double latitude, double longitude) {
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
+        this.latitude = latitude;
+        this.longitude = longitude;
     }
 
     public String getName() {
@@ -23,5 +26,13 @@ public class User {
 
     public String getPhoneNumber() {
         return phoneNumber;
+    }
+
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
     }
 }

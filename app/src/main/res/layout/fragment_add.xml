@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".AddFragment">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Enter name"
+        android:id="@+id/nameEditText"
+        android:padding="5dp"
+        android:layout_marginLeft="@dimen/margin_three_dp"
+        android:layout_marginRight="@dimen/margin_three_dp"
+        android:layout_margin="@dimen/margin_ten_dp"
+        android:background="@drawable/edit_text_border"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Enter email"
+        android:id="@+id/emailEditText"
+        android:padding="5dp"
+        android:layout_margin="@dimen/margin_ten_dp"
+        android:layout_marginLeft="@dimen/margin_three_dp"
+        android:layout_marginRight="@dimen/margin_three_dp"
+        android:background="@drawable/edit_text_border"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:hint="Enter Mobile Number"
+        android:id="@+id/numberEditText"
+        android:padding="5dp"
+        android:layout_margin="@dimen/margin_ten_dp"
+        android:layout_marginLeft="@dimen/margin_three_dp"
+        android:layout_marginRight="@dimen/margin_three_dp"
+        android:background="@drawable/edit_text_border"/>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:textColor="@color/white"
+        style="?attr/borderlessButtonStyle"
+        android:layout_marginLeft="@dimen/margin_five_dp"
+        android:layout_marginRight="@dimen/margin_five_dp"
+        android:background="@drawable/button_background" />
+
+
+
+</LinearLayout>
